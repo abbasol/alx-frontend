@@ -547,6 +547,7 @@ ul.row {
   width: 50%;
 }
 
+/* ========= Footer ========== */
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
@@ -555,6 +556,18 @@ ul.row {
 
 .footer ul {
   text-align: right;
+}
+
+.footer-address {
+  color: var(--text-color);
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link > svg {
+  fill: var(--text-color);
 }
 
 .row::after {
@@ -574,4 +587,21 @@ ul.row {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
+}
+
+/* ============ Services ============== */
+.card-services .card-title {
+    margin: 0;
+}
+
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
 }

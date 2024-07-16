@@ -407,6 +407,18 @@ template {
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0  3rem;
     --nav-item-link-hover: var(--color-primary);
+
+/* ====================== Button Styling ========================= */
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: 0.2rem solid var(--color-primary);
+  --button-color: var(--color-black);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
+
 }
 
 *, *:before, *:after {
@@ -432,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-
+/* =========== anchor links ===================== */
 
 a:link {
     background-color: var(--text-color);
@@ -449,6 +461,22 @@ a:hover {
 
 a:active {
     background-color: var(--color-light-grey);
+}
+
+/*============== Button ===========*/
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+}
+
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background-color: var(--button-hover-background);
 }
 
 .visually-hidden {
@@ -547,6 +575,7 @@ ul.row {
   width: 50%;
 }
 
+/* ========= Footer ========== */
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
@@ -555,6 +584,18 @@ ul.row {
 
 .footer ul {
   text-align: right;
+}
+
+.footer-address {
+  color: var(--text-color);
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link > svg {
+  fill: var(--text-color);
 }
 
 .row::after {
@@ -573,5 +614,24 @@ ul.row {
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
+    --button-color: var(--color-white);
     background-color: var(--color-black);
+
+}
+
+/* ============ Services ============== */
+.card-services .card-title {
+    margin: 0;
+}
+
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
 }
